@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_admin"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new Station"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/title_frame"
+
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt_station_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Station name"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:background="@drawable/frame_style"
+        android:padding="18dp"
+        android:textColorHint="@color/black"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edt_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:background="@drawable/frame_style"
+        android:padding="18dp"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal" >
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edt_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:background="@drawable/frame_style"
+        android:padding="18dp"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal" >
+        ></EditText>
+
+    <Button
+        android:id="@+id/btn_add_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add station"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:backgroundTint="#CD182D"
+
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_show_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Stations"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:backgroundTint="#05268A"
+
+        ></Button>
+
+
+</LinearLayout>

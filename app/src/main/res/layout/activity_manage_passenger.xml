@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_passenger">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Passenger"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/title_frame"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/white"
+                android:hint="select bus stop"
+                app:hintTextColor="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none">
+
+                </AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/edt_passenger_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Passenger"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/frame_style"
+        android:padding="20dp"
+        android:inputType="number"
+        android:layout_marginTop="100dp"
+
+    ></EditText>
+        <Button
+            android:id="@+id/btn_add_passenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add passenger"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:padding="15dp"
+            android:textSize="24dp"
+            android:backgroundTint="#0716A5"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_reset_passengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset passenger"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:padding="15dp"
+            android:textSize="24dp"
+            android:backgroundTint="#DA071F"
+            ></Button>
+    </LinearLayout>
+
+
+</ScrollView>
